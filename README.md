@@ -48,7 +48,7 @@ This repository contains the source code and documentation for building a Stream
 
 ## Folder Structure
 
-<img src="folder_structure.png" alt="Project Structure" width="400" />
+<img src="folder_structure.png" alt="Project Structure" width="350" />
 
 
 ## Getting Started
@@ -73,12 +73,12 @@ This repository contains the source code and documentation for building a Stream
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your_username/final_proj.git
+    git clone https://github.com/aravindhKumaran/streaming_lakehouse.git
     ```
 
 2. Initialize project resources:
     ```bash
-    cd final_proj/infrastructure
+    cd streaming_lakehouse/infrastructure
     ./init.sh
     ```
 
