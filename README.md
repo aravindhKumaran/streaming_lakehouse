@@ -48,7 +48,7 @@ This repository contains the source code and documentation for building a Stream
 
 ## Folder Structure
 
-<img src="folder_structure.png" alt="Project Structure" width="800" />
+<img src="folder_structure.png" alt="Project Structure" width="400" />
 
 
 ## Getting Started
