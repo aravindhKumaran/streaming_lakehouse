@@ -6,8 +6,10 @@
 
 This repository contains the source code and documentation for building a Streaming Data Lakehouse on real-time GPS data using Apache NiFi, Debezium, Apache Kafka (MSK), Apache Spark Structured Streaming, Docker, MySQL, and Tableau for visualization. The project focuses on collecting GPS data streamed by IoT devices located on buses, specifically utilizing data from the Toronto Transit Commission (TTC) provided through the Rest Bus API. The pipeline includes data extraction, transformation, loading, and visualization.
 
+## Architecture Diagram
 <img src="architecture.png" alt="Architecture-Diagram" width="800" />
 
+## Real Time Dashboard
 <img src="dashboard.png" alt="Real Time Dashboard" width="800" />
 
 ## Project Workflow
@@ -116,7 +118,7 @@ CREATE TABLE IF NOT EXISTS bus_status (
 
 The NiFi process involves collecting data from the Rest Bus API endpoint in JSON format. The InvokeHTTP processor is configured to fetch data from the API every second. A ConverterJSONToSQL processor is added to convert JSON blobs into SQL inserts. The incoming JSON message includes fields like id, routeId, directionId, predictable, secsSinceReport, kph, heading, lat, lon, and leadingVehicleId. Data transformation involves converting JSON to SQL inserts and inserting records into the MySQL table.
 
-
+## NiFi Flow
 <img src="nifi_flow.png" alt="NiFi Flow" width="800" />
 
 ```json
